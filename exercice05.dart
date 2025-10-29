@@ -1,7 +1,11 @@
-// exercice5.dart
+// exercice05.dart
 
 abstract class Forme {
   double calculerAire();
+  
+  void afficherMessage() {
+    print("Calcul de l'aire...");
+  }
 }
 
 void main() {
