@@ -10,7 +10,6 @@ class Compte {
     return "${_solde.toStringAsFixed(2)} \$";
   }
   
-  // AJOUTEZ CETTE PARTIE ⬇️
   void depot(double montant) {
     if (montant > 0) {
       _solde += montant;
@@ -19,5 +18,11 @@ class Compte {
 }
 
 void main() {
-  print("Exercice 3 - Compte Bancaire");
+  print("Exercice 3 - Compte Bancaire\n");
+  
+  var compte1 = Compte("ACC123456");
+  print("Solde initial: ${compte1.solde}");
+  
+  compte1.depot(150.50);
+  print("Après dépôt: ${compte1.solde}");
 }
