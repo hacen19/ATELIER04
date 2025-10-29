@@ -33,5 +33,12 @@ class Film extends Media {
 }
 
 void main() {
-  print("Exercice 4 - Types de media");
+  print("Exercice 4 - Types de media\n");
+  
+  List<Media> catalogue = [];
+  
+  catalogue.add(Livre("1984", "George Orwell"));
+  catalogue.add(Livre("Le Petit Prince", "Antoine de Saint-Exupéry"));
+  catalogue.add(Film("Inception", 148));
+  catalogue.add(Film("Matrix", 136));
 }
