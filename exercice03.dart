@@ -6,9 +6,15 @@ class Compte {
   
   Compte(this.numeroCompte, [this._solde = 0.0]);
   
-  // AJOUTEZ CETTE PARTIE ⬇️
   String get solde {
     return "${_solde.toStringAsFixed(2)} \$";
+  }
+  
+  // AJOUTEZ CETTE PARTIE ⬇️
+  void depot(double montant) {
+    if (montant > 0) {
+      _solde += montant;
+    }
   }
 }
 
