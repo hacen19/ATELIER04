@@ -31,5 +31,9 @@ class BaseDeDonnees implements Connectable {
 }
 
 void main() {
-  print("Exercice 6 : Le Contrat de Service");
+  print("Exercice 6 : Le Contrat de Service\n");
+  
+  // Créer les instances
+  var api = ServeurAPI();
+  var bdd = BaseDeDonnees();
 }
