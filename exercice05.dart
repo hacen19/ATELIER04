@@ -1,7 +1,7 @@
 // exercice5.dart
 
 abstract class Forme {
-  
+  double calculerAire();
 }
 
 void main() {
