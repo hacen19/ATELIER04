@@ -19,5 +19,20 @@ class Couleur {
 }
 
 void main() {
-  print("Exercice 1 : L'usine de couleurs");
+  print("Exercice 1 : L'usine de couleurs\n");
+  
+  // Créer les instances avec constructeurs nommés
+  var rouge = Couleur.rouge();
+  var vert = Couleur.vert();
+  var bleu = Couleur.bleu();
+  
+  // Afficher les couleurs
+  print("Couleur rouge :");
+  rouge.afficherCouleur();
+  
+  print("\nCouleur verte :");
+  vert.afficherCouleur();
+  
+  print("\nCouleur bleue :");
+  bleu.afficherCouleur();
 }
