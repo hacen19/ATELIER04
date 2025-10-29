@@ -41,4 +41,9 @@ void main() {
   catalogue.add(Livre("Le Petit Prince", "Antoine de Saint-Exupéry"));
   catalogue.add(Film("Inception", 148));
   catalogue.add(Film("Matrix", 136));
+  
+  print("=== Catalogue de médias ===\n");
+  for (var media in catalogue) {
+    media.afficherType();
+  }
 }
