@@ -21,6 +21,12 @@ class Livre extends Media {
   }
 }
 
+class Film extends Media {
+  final int dureeMinutes;
+  
+  Film(String titre, this.dureeMinutes) : super(titre);
+}
+
 void main() {
   print("Exercice 4 - Types de media");
 }
