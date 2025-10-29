@@ -14,4 +14,5 @@ class Couleur {
 }
 
 void main() {
-  print("Exercice 1 : L'usine de couleurs")
+  print("Exercice 1 : L'usine de couleurs");
+}
