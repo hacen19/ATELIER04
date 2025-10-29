@@ -1,6 +1,6 @@
 // Classe Tache
 class Tache {
-  String description;  // Propriété publique
+  
 }
 
 void main() {
