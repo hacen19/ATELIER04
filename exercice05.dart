@@ -21,6 +21,18 @@ class Cercle extends Forme {
   }
 }
 
+class Rectangle extends Forme {
+  final double longueur;
+  final double largeur;
+  
+  Rectangle(this.longueur, this.largeur);
+  
+  @override
+  double calculerAire() {
+    return longueur * largeur;
+  }
+}
+
 void main() {
   print("Exercice 5 - Gestion des Formes");
 }
