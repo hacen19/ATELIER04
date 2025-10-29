@@ -36,4 +36,14 @@ void main() {
   // Créer les instances
   var api = ServeurAPI();
   var bdd = BaseDeDonnees();
+  
+  // Créer la liste services
+  List<Connectable> services = [api, bdd];
+  
+  // Parcourir la liste et appeler les méthodes
+  for (var service in services) {
+    service.connecter("Admin");
+    service.deconnecter();
+    print("");  // Ligne vide pour la lisibilité
+  }
 }
